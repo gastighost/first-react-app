@@ -16,6 +16,7 @@ function Rating(props) {
       ) : (<IoIosStarOutline onClick={() => setRating(4)}/>)}
       {rating >= 5 ? (<IoIosStar onClick={() => setRating(5)}/>
       ) : (<IoIosStarOutline onClick={() => setRating(5)}/>)}
+      {props.numOfReviews}
     </div>
   );
 }
